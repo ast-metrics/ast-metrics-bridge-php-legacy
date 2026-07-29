@@ -1,16 +1,8 @@
 {
     "name": "halleck45/ast-metrics",
-    "description": "AST Metrics bridge for PHP",
-    "type": "library",
+    "description": "Renamed to ast-metrics/ast-metrics. This package only forwards to it.",
+    "type": "metapackage",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Halleck45\\AstMetrics\\": "src/"
-        }
-    },
-    "bin": [
-        "bin/ast-metrics"
-    ],
     "authors": [
         {
             "name": "Jean-François Lépine",
@@ -18,7 +10,6 @@
         }
     ],
     "require": {
-      "ext-json": "*",
-      "php": ">=7.0"
+        "ast-metrics/ast-metrics": "*"
     }
 }

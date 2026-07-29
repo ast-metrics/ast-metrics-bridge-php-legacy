@@ -1,28 +1,14 @@
-# AST Metrics - bridge for PHP
+# halleck45/ast-metrics
 
-This package allows to easily use [AST Metrics](https://github.com/Halleck45/ast-metrics/) in PHP projects.
-
-## Installation
+This package was renamed to [`ast-metrics/ast-metrics`](https://packagist.org/packages/ast-metrics/ast-metrics).
 
 ```bash
-composer require halleck45/ast-metrics
+composer remove halleck45/ast-metrics
+composer require --dev ast-metrics/ast-metrics
 ```
 
-## Usage
+The command stays the same: `php vendor/bin/ast-metrics analyze src`.
 
-```bash
-php vendor/bin/ast-metrics analyze --ci src
-```
-
-> [!NOTE]
-> Please note this limitation: when used via this project, only the non-interactive mode is available.
-
-## Updating the AST Metrics binary
-
-```bash
-php vendor/bin/ast-metrics self-update
-```
-
-## License
-
-MIT. See [LICENSE](LICENSE) for more details.
+This repository only exists to keep the old Composer name resolvable, so that an existing
+`composer.json` or `composer.lock` keeps working. The code lives at
+[ast-metrics/ast-metrics-bridge-php](https://github.com/ast-metrics/ast-metrics-bridge-php).
